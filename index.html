@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Test</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <style type="text/css">
+      #box{
+        width:200px;
+        height:200px;
+        background-color:#ddd;
+      }
+      .error{
+        color:#f00;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box"></div>
+    <div>
+      <input type="text" class="my-input">
+      <button class="copy-button">&rarr;</button>
+      <input type="text" class="my-output">
+    </div>
+    <div>
+      <a href="one.html">ワン</a>
+      <a href="two.html">ツー</a>
+      <a href="three.html">スリー</a>  
+    </div>
+    <!--イベント-->
+    <div>
+      <a class="mylink" href="./page2.html">ページ2</a>  
+    </div>
+    <div>
+      <div class="parent">
+        <button type="button" class="my-button">ボタン</button>
+      </div>
+      <div class="parent">
+        <button type="button" class="my-button">ボタン</button>
+      </div>
+    </div>
+    <!--フォームの送信前にエラーチェック-->
+    <form class="my-form" action="" method="post">
+      <p>
+        <input type="text" name="text1" class="text1">
+      </p>
+      <p>
+        <input type="text" name="text2" class="text2">
+      </p>
+      <p>
+        <input type="submit" value="送信">
+      </p>
+      <p class="error"></p>
+      <!--ダブルクリック-->
+      <input type="button" value="dblclick">
+    </form>
+  </body>
+</html>
